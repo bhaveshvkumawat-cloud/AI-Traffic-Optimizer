@@ -32,6 +32,8 @@ jobs:
         run: npm ci
 
       - name: Build website
+        env:
+          VITE_API_URL: https://ai-traffic-optimizer-3o65.onrender.com
         run: npm run build
 
       - name: Configure Pages
